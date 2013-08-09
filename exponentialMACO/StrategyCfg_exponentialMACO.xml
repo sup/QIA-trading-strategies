@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Strategy>
+   <strategyFunction name="exponentialMACO"/>
+   <strategyArguments rebalanceCycle="1" returnCalFrequency="TimeIntervals.DAY01"/>
+   <FactorDataCfg dateListType="DateListType.Trading" localPath="pwd\cacheData" periodType="PeriodType.StockTradingPeriod" tickerList="Stkcd.xml"/>
+   <data decisionDataLength="1000" fieldname="CP" frequency="TimeIntervals.DAY01"/>
+</Strategy>

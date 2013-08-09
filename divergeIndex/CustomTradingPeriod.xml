@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tradingPeriod>
+   <period endTime="11:30:00" startTime="09:30:00"/>
+   <period endTime="15:00:00" startTime="13:00:00"/>
+</tradingPeriod>

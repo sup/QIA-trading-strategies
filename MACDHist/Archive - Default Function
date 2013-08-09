@@ -1,0 +1,37 @@
+function [ portfolio, newStateMatrix ] = MACDHist( decisionData, stateMatrix )
+
+	%²ßÂÔ¾ö²ßËùÐèÒªµÄÊý¾Ý£¬Æä×Ö¶ÎÄÚÈÝÓÉ²ßÂÔÊý¾ÝÅäÖÃÎÄ¼þStrategyCfg_simpleDemo.xml¾ö¶¨
+	decisionData;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄ²É¼¯Ê±¼ä
+	decisionData.time;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄÒò×Ó×Ö¶ÎÁÐ±í
+	decisionData.varList;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄµÚÒ»¸öÒò×Ó×Ö¶ÎµÄ¹«Ë¾´úÂëÁÐ±í
+	decisionData.(decisionData.varList{1}).tickerList;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄµÚÒ»¸öÒò×Ó×Ö¶ÎµÄÊ±¼äÖáÁÐ±í
+	decisionData.(decisionData.varList{1}).timeList
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄµÚÒ»¸öÒò×Ó×Ö¶ÎµÄÊý¾Ý¾ØÕó£¬ÐÐË÷ÒýÎª¹«Ë¾´úÂëÁÐ±í£¬ÁÐË÷ÒýÎªÊ±¼äÖáÁÐ±í
+	decisionData.(decisionData.varList{1}).data;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄµÚÒ»¸öÒò×Ó×Ö¶ÎµÄ×Ö¶ÎÃû
+	decisionData.(decisionData.varList{1}).fieldName;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄµÚÒ»¸öÒò×Ó×Ö¶ÎµÄÊ±¼äÖáµÄ²ÉÑùÆµÂÊ
+	decisionData.(decisionData.varList{1}).frequency;
+
+	%²ßÂÔ¾ö²ßÊý¾ÝµÄ¹«Ë¾ÁÐ±í
+	tickerList = decisionData.(decisionData.varList{1}).tickerList;
+
+	%·µ»Ø²ßÂÔµÄÄ¿±êÍ¶×é£¬´Ë²ßÂÔ½«½¨Á¢Ò»¸öÆ½¾ù·ÖÅä×Ê½ðµÄÍ¶×Ê×éºÏ£¬ÆäÖÐportfolioµÄÎ¬¶È±ØÐëºÍ²ßÂÔ¾ö²ßÊý¾ÝµÄ¹«Ë¾ÁÐ±íÒ»Ñù
+	portfolio =  ones(size( tickerList ))/length( tickerList );
+
+	%±£´æ×´Ì¬¾ØÕó
+	newStateMatrix = stateMatrix;
+end
+
+%<-------------------------------END DEFAULT FUNCTION------------------------------------>

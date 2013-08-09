@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BackTest>
+   <backtestArguments actionDelay="1" orgidMode="all" repoFrequency="DAY01" reportDisplay="On" resultSave="On"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.StockA" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.StockB" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.Index" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.Fund" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.Bond" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.IndexFuture" sell="0.00005"/>
+   <transactionCost buy="0.00005" securityType="SecurityType.CommodityFuture" sell="0.00005"/>
+   <performanceAnalysisData code="" funName="SharpeRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="000300" funName="Beta" name="CSI300Rtn" value=""/>
+   <performanceAnalysisData code="" funName="calmarRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="" funName="conditionalSharpRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="" funName="conditionalSharpRatio" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="" funName="conditionalVaR" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="" funName="excessReturnOnVaR" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="" funName="excessReturnOnVaR" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="" funName="higherPartialMoments" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="higherPartialMoments" name="n" value="2"/>
+   <performanceAnalysisData code="" funName="jensenRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="000300" funName="jensenRatio" name="CSI300Rtn" value=""/>
+   <performanceAnalysisData code="" funName="Kappa3" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="lowerPartialMoments" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="lowerPartialMoments" name="n" value="2"/>
+   <performanceAnalysisData code="" funName="modifiedSharpRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="" funName="MVaR" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="" funName="Omega" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="sortinoRatio" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="treynorRatio" name="riskFreeR" value="0"/>
+   <performanceAnalysisData code="000300" funName="treynorRatio" name="CSI300Rtn" value=""/>
+   <performanceAnalysisData code="" funName="upsidePotentialRatio" name="tau" value="0"/>
+   <performanceAnalysisData code="" funName="VaR" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="" funName="modifiedSharpRatio" name="alpha" value="0.05"/>
+   <performanceAnalysisData code="000300" funName="CorrWithMarket" name="CSI300Rtn" value=""/>
+   <performanceAnalysisFun dispName="日平均收益率" funName="averageSimpleRateOfReturn"/>
+   <performanceAnalysisFun dispName="累积简单收益率" funName="cumsumSimpleReturn"/>
+   <performanceAnalysisFun dispName="日命中率" funName="hitRate"/>
+   <performanceAnalysisFun dispName="波动率" funName="Volatility"/>
+   <performanceAnalysisFun dispName="市场的相关系数" funName="CorrWithMarket"/>
+   <performanceAnalysisFun dispName="Beta" funName="Beta"/>
+   <performanceAnalysisFun dispName="夏普比率" funName="SharpeRatio"/>
+   <performanceAnalysisFun dispName="treynor比率" funName="treynorRatio"/>
+   <performanceAnalysisFun dispName="jensen指数" funName="jensenRatio"/>
+   <performanceAnalysisFun dispName="最大回撤" funName="maximumDrawdown"/>
+   <performanceAnalysisFun dispName="calmar比率" funName="calmarRatio"/>
+   <performanceAnalysisFun dispName="二阶下偏矩" funName="lowerPartialMoments"/>
+   <performanceAnalysisFun dispName="一阶上偏矩" funName="higherPartialMoments"/>
+   <performanceAnalysisFun dispName="Omega" funName="Omega"/>
+   <performanceAnalysisFun dispName="sortino比率" funName="sortinoRatio"/>
+   <performanceAnalysisFun dispName="Kappa3" funName="Kappa3"/>
+   <performanceAnalysisFun dispName="上行空间比率" funName="upsidePotentialRatio"/>
+   <performanceAnalysisFun dispName="在险价值" funName="VaR"/>
+   <performanceAnalysisFun dispName="风险价值上的超额收益" funName="excessReturnOnVaR"/>
+   <performanceAnalysisFun dispName="条件在险价值" funName="conditionalVaR"/>
+   <performanceAnalysisFun dispName="条件夏普比率" funName="conditionalSharpRatio"/>
+   <performanceAnalysisFun dispName="日收益率偏度" funName="Skewness"/>
+   <performanceAnalysisFun dispName="日收益率峰度" funName="Kurtosis"/>
+   <performanceAnalysisFun dispName="修正的在险价值" funName="MVaR"/>
+   <performanceAnalysisFun dispName="修正的夏普比率" funName="modifiedSharpRatio"/>
+   <benchmark code="000300" name="benchmark"/>
+</BackTest>

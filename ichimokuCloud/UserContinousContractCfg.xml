@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContinousContract>
+   <ContinuousLogic logicFunction="mainContinousContract" name="主力连续A"/>
+   <ContinuousLogic logicFunction="currentMonthContinuousContract" name="当月连续"/>
+   <ContinuousLogic logicFunction="nextMonthContinuousContract" name="次月连续"/>
+   <ContinuousLogic logicFunction="currentSeasonContinuousContract" name="当季连续"/>
+   <ContinuousLogic logicFunction="nextSeasonContinuousContract" name="下季连续"/>
+</ContinousContract>
